@@ -1,0 +1,95 @@
+.testimonials-slider
+    .testimonials-slide
+        max-width: gem(295)
+        min-height: gem(445)
+        background-color: #FFFFFF
+        border: 1px solid #E5EDFC
+        border-radius: gem(20)
+        display: flex
+        flex-direction: column
+        .slide-body
+            padding: gem(30)
+            border-bottom: 1px solid #E5EDFC
+            flex: 1
+            .quote-icon
+                margin-bottom: gem(29)
+                width: gem(24)
+                height: gem(21)
+            .quote
+                line-height: gem(28)
+        .slide-footer
+            padding: gem(20) gem(30)
+            display: flex
+            .image-wrap
+                width: gem(42)
+                height: gem(42)
+                border-radius: gem(10)
+                img
+                    width: 100%
+                    object-fit: cover
+            .text-wrap
+                display: flex
+                flex-direction: column
+                align-items: flex-start
+                margin-left: gem(10)
+                .name
+                    line-height: gem(21)
+                    text-transform: uppercase
+                    color: #224281
+                .position
+                    line-height: gem(15)
+
+.slick-dots
+    position: relative
+    bottom: gem(26)
+    height: 0 !important
+    .dot
+        width: 100%
+        height: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        &::after
+            content: ''
+            position: absolute
+            width: gem(18)
+            height: gem(18)
+            background-color: #7445FB
+            box-shadow: 0px 4px 8px rgba(116, 69, 251, 0.4)
+            border-radius: 100%
+            tramsition: all 0.4s ease
+            opacity: 0
+    &.slick-thumb
+        display: flex
+        flex-direction: row
+        justify-content: center
+        li
+            width: gem(32)
+            height: gem(32)
+            background-color: #EEF2FA
+            border-radius: gem(10)
+            &.slick-active
+                .dot
+                    &::after
+                        opacity: 1
+
+@media all and (max-width: 767px)
+    .slick-dots
+        .dot
+            &::after
+                width: gem(14)
+                height: gem(14)
+        &.slick-thumb
+            li
+                width: gem(24)
+                height: gem(24)
+                background-color: #fff
+                border-radius: 100%
+    .testimonials-slide
+        margin: 0 gem(2)
+    .testimonials-slider
+        .slick-dots
+            bottom: gem(46)
+            &.slick-thumb
+                li
+                    background-color: #eef2fa

@@ -1,0 +1,71 @@
+.faq 
+    padding: gem(36) gem(30) gem(22) gem(30)
+    margin-bottom: gem(5)
+    background: #FFFFFF
+    border-radius: gem(20)
+    cursor: pointer
+    position: relative
+    .faq-question
+        position: relative
+        padding-right: gem(80)
+        font-weight: 500
+        line-height: gem(28)
+    .faq-question::after
+        content: ""
+        position: absolute
+        bottom: gem(-15)
+        left: 0
+        width: 100%
+        height: 1px
+        background-color: #D9D9D9
+        opacity: 0
+    .faq-answer
+        opacity: 0
+        max-height: 0
+        overflow: hidden
+        transition: opacity 0.5s ease
+        line-height: gem(28)
+        margin-top: gem(15)
+        max-width: gem(493)
+        width: 100%
+    .indicator
+        position: absolute
+        top: gem(32)
+        right: gem(25)
+        width: gem(29)
+        height: gem(29)
+        border: 2px solid #7445FB
+        display: flex
+        align-items: center
+        justify-content: center
+        border-radius: gem(10)
+        transition: all 0.2s ease
+        .sign
+            position: absolute
+            color: #7445FB
+            font-size: gem(25)
+            line-height: 0
+            margin-top: gem(-2)
+            transition: all 0.2s ease
+    &.open
+        .indicator
+            background-color: #7445FB
+        .sign
+            color: #fff
+        .faq-question
+            margin-bottom: gem(27)
+        .faq-question::after
+            opacity: 1
+        .faq-answer
+            max-height: gem(1000)
+            opacity: 1
+
+@media all and (max-width: 767px)
+    .faq
+        border-radius: 10px
+        margin-bottom: gem(10)
+        .faq-answer
+            line-height: gem(24)
+        &.open
+            .faq-answer
+                padding-bottom: gem(30)

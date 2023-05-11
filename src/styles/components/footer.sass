@@ -1,0 +1,102 @@
+.footer
+    position: relative
+    border-top: 1px solid rgba(151, 151, 151, 0.35)
+    padding-top: gem(30)
+    .content
+        display: flex
+        justify-content: space-between
+        margin-bottom: gem(92)
+    .logo-wrap
+        display: flex
+        flex-direction: column
+        .logo
+            width: gem(46)
+            height: gem(50)
+            margin-bottom: gem(20)
+        .company-desc
+            color: #23262F
+            font-weight: 500
+            line-height: gem(21)
+            width: 100%
+            max-width: gem(200)
+    .company-desc
+        position: relative
+    .footer-links-wrap
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        grid-auto-rows: max-content
+        column-gap: 0
+        max-width: 100%
+        margin-top: gem(20)
+        .link
+            @extend .base-font
+            font-weight: 400
+            font-size: gem(14)
+            line-height: gem(16)
+            color: #000
+            margin-bottom: gem(24)
+            cursor: pointer
+            text-decoration: none
+    .news-wrap
+        width: 100%
+        max-width: gem(352)
+        margin-top: gem(12)
+        .news-title
+            margin-bottom: gem(27)
+            color: #000000
+            font-weight: 500
+        .news-desc
+            font-weight: 400
+            font-size: gem(14)
+            line-height: gem(24)
+            color: #224281
+            margin-bottom: gem(13)
+            width: 100%
+            max-width: gem(250)
+    .copyright
+        display: block
+        font-weight: 400
+        font-size: gem(12)
+        line-height: gem(20)
+        color: #777E91
+        margin-bottom: gem(19)
+
+@media all and (max-width: 767px)
+    .footer
+        .content
+            flex-direction: column
+            align-items: center
+            justify-content: flex-start
+            .logo-wrap
+                align-items: center
+                .company-desc
+                    text-align: center
+        .footer-links-wrap
+            grid-template-columns: 1fr
+            justify-items: center
+            margin-top: gem(50)
+            .link
+                font-weight: 400
+                font-size: gem(13)
+                line-height: gem(16)
+                margin-bottom: gem(24)
+        .news-wrap
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-top: gem(51)
+            .news-title
+                font-size: gem(15)
+                line-height: gem(24)
+                margin-bottom: gem(19)
+            .news-desc
+                text-align: center
+                font-size: gem(14)
+                line-height: gem(24)
+            form
+                width: 100%
+        .copyright
+            max-width: gem(182)
+            text-align: center
+            display: block
+            margin: 0 auto gem(12)

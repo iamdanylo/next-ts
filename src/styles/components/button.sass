@@ -1,0 +1,21 @@
+.btn
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: #000000
+    border-radius: gem(100)
+    cursor: pointer
+    width: gem(200)
+    height: gem(58)
+    opacity: 1
+    transition: all 0.3s ease
+    text-decoration: none
+    &.btn-ghost
+        border: 1px solid #7445FB
+        background-color: transparent
+        .btn-text
+            color: #7445FB
+    &.btn-purple
+        background-color: #7445FB
+    &:hover
+        opacity: 0.85

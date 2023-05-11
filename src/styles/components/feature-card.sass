@@ -1,0 +1,42 @@
+.feature
+    display: flex
+    align-items: center
+    background-color: #FFFFFF
+    border: 1px solid #E5EDFC
+    border-radius: gem(20)
+    padding: gem(30)
+    .icon-wrap
+        margin-right: gem(20)
+        width: gem(62)
+        height: gem(62)
+        background: #EAE3FF
+        border-radius: gem(10)
+        display: flex
+        align-items: center
+        justify-content: center
+        .icon
+            position: absolute
+            width: gem(20)
+            height: auto
+    .text-wrap
+        width: 100%
+        max-width: gem(232)
+        .desc
+            font-weight: 600
+            font-size: gem(13)
+            line-height: gem(21)
+            text-transform: uppercase
+
+@media all and (max-width: 767px)
+    .feature
+        padding: gem(24)
+        .text-wrap
+            width: auto
+            .desc
+                font-size: gem(11)
+                line-height: gem(21)
+        .icon-wrap
+            width: gem(42)
+            height: gem(42)
+            border-radius: gem(10)
+            margin-right: gem(10)

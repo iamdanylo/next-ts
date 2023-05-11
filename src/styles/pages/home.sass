@@ -1,0 +1,704 @@
+.hero-section
+    position: relative
+    z-index: 3
+    .container
+        padding-top: gem(111)
+        margin-top: gem(72)
+    .text-wrap
+        margin-bottom: gem(60)
+    .title
+        position: relative
+        margin-bottom: gem(20)
+        max-width: gem(450)
+        .gradient-text
+            display: inline-block
+        b
+            font-weight: 800
+    .desc
+        position: relative
+        max-width: gem(540)
+    .btn-wrap
+        display: flex
+        margin-bottom: gem(149)
+        .btn
+            margin-right: gem(10)
+            background-color: #7445FB
+        .btn-contained
+            box-shadow: 0px 14px 34px rgba(36, 4, 128, 0.4)
+        .btn-outlined
+            border: 1px solid #7445FB
+            background-color: transparent
+            &.btn-text
+                color: #7445FB
+            .btn-text
+                color: #7445FB
+    .title-image
+        position: absolute
+        z-index: -1
+        top: gem(-26)
+        left: gem(-13)
+
+.elipse
+    border-radius: 100%
+    animation-timing-function: ease
+    opacity: 0
+    animation-fill-mode: both
+
+.hero-image-wrap
+    position: absolute
+    right: gem(-82)
+    top: gem(-174)
+    display: flex
+    align-items: center
+    justify-content: center
+    z-index: 0
+    .elipse-lg
+        @extend .elipse
+        border: 1px solid #E5EDFC
+        width: gem(957)
+        height: gem(957)
+        left: gem(564)
+        top: gem(-98)
+        animation-delay: 0.01s
+    .elipse-md
+        @extend .elipse
+        border: 1px solid #E5EDFC
+        position: absolute
+        width: gem(715)
+        height: gem(715)
+        animation-delay: 0.1s
+    .elipse-sm
+        @extend .elipse
+        position: absolute
+        background: rgba(212, 223, 243, 0.37)
+        width: gem(553)
+        height: gem(553)
+        animation-delay: 0.3s
+        opacity: 0
+    &.active
+        .elipse-lg,.elipse-sm, .elipse-md
+            animation-name: scaleUp
+            animation-duration: 0.6s
+
+.hero-image
+    width: gem(722)
+    height: gem(626)
+    position: absolute
+    z-index: 2
+    right: 0
+    top: gem(-23)
+    img
+        width: 100%
+        height: auto
+        opacity: 0
+        transition: all 0.7s linear
+
+.bottom-info
+    width: 100%
+    display: flex
+    justify-content: center
+    margin-bottom: gem(20)
+    .bottom-info-text
+        text-transform: uppercase
+        font-weight: 600
+        line-height: gem(16)
+        letter-spacing: 0.2em
+
+@keyframes scaleUp
+    0%
+        transform: scale(0.8)
+        opacity: 0
+    100%
+        transform: scale(1)
+        opacity: 1
+
+.partners-wrap
+    background: #FFFFFF
+    border: 1px solid #E5EDFC
+    border-radius: gem(20)
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: gem(122)
+    padding: 0 gem(45) 0 gem(22)
+    margin-bottom: gem(45)
+    img
+        width: gem(150)
+
+.steps-section
+    display: flex
+    justify-content: center
+    align-items: flex-start
+    padding-top: gem(32)
+    position: relative
+    .steps-bg
+        position: absolute
+        top: 0
+        background: #EEF2FA
+        border-radius: gem(20)
+        width: 94.6%
+        height: 100%
+        display: flex
+        justify-content: center
+        align-items: flex-start
+        img
+            width: 100%
+            height: 100%
+    .title-wrap
+        width: 100%
+        display: flex
+        justify-content: center
+        margin-bottom: gem(103)
+        .steps-title
+            text-align: center
+            max-width: gem(547)
+            width: 100%
+
+.steps-container
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.steps-wrap
+    width: 100%
+    max-width: gem(772)
+    position: relative
+    .step-line-wrap
+        position: absolute
+        &.step-line-1
+            top: gem(70)
+            right: gem(-116)
+        &.step-line-2
+            bottom: gem(45)
+            left: gem(-123)
+
+.step-card
+    position: relative
+    display: flex
+    flex-direction: column
+    &.left
+        align-items: flex-start
+    &.right
+        align-items: flex-end
+    .step-card-title
+        margin-bottom: gem(20)
+        font-weight: 500
+        letter-spacing: 3px
+        display: flex
+        align-items: baseline
+        span
+            font-size: gem(11)
+            letter-spacing: 0
+            margin-left: gem(3)
+    .step-card-list
+        display: flex
+        flex-direction: column
+        padding-left: gem(5)
+        .step-card-list-item
+            margin-bottom: gem(4)
+            b
+                font-weight: 700
+    &.step-1
+        margin-bottom: gem(149)
+        .step-image-wrap
+            position: absolute
+            right: gem(62)
+            top: gem(-7)
+            width: gem(302)
+            img
+                width: 100%
+    &.step-2
+        margin-bottom: gem(156)
+        .step-card-wrap
+            margin-right: gem(80)
+        .step-image-wrap
+            position: absolute
+            left: gem(12)
+            top: gem(-61)
+            width: gem(340)
+            img
+                width: 100%
+    &.step-3
+        .step-image-wrap
+            position: absolute
+            right: gem(6)
+            top: gem(-100)
+            width: gem(344)
+            img
+                width: 100%
+
+.elipse-bg
+    position: absolute
+    display: flex
+    align-items: center
+    justify-content: center
+    z-index: 0
+    .elipse-lg
+        border-radius: 100%
+        position: absolute
+        width: gem(660)
+        height: gem(660)
+        border: 1px solid rgba(44, 79, 150, 0.17)
+    .elipse-sm
+        border-radius: 100%
+        position: absolute
+        width: gem(536)
+        height: gem(536)
+        background-color: rgba(212, 223, 243, 0.37)
+
+.product-section
+    .text-wrap
+        width: 100%
+        .title
+            margin-top: gem(58)
+            margin-bottom: gem(20)
+            letter-spacing: -1px
+        .desc
+            margin-bottom: gem(40)
+            line-height: gem(28)
+        .product-list
+            .icon
+                margin-right: gem(15)
+                font-size: gem(17)
+            .list-item
+                display: flex
+                margin-bottom: gem(18)
+                text-transform: uppercase
+                font-weight: 600
+                font-size: gem(13)
+                line-height: gem(21)
+    .image-wrap
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: center
+        img
+            z-index: 2
+
+.mobile-product-section
+    padding-top: gem(62)
+    position: relative
+    .gradient-1
+        z-index: 0
+        position: absolute
+        right: 0
+        top: 0
+        width: gem(459)
+        height: gem(700)
+        background: radial-gradient(44.63% 43.89% at 54.65% 47.55%, rgba(255, 39, 143, 0.25) 0%, rgba(255, 39, 143, 0) 100%)
+    .gradient-2
+        position: absolute
+        width: gem(395)
+        height: gem(345)
+        right: gem(270)
+        top: 0
+        background: radial-gradient(46.03% 46.03% at 50% 50%, rgba(81, 182, 255, 0.7) 0%, rgba(81, 182, 255, 0) 100%)
+    .content
+        display: flex
+        width: 100%
+    .image-wrap
+        img
+            width: gem(464)
+    .text-wrap
+        margin-right: gem(165)
+        max-width: gem(460)
+
+.web-product-section
+    padding-top: gem(110)
+    display: flex
+    justify-content: center
+    .content
+        display: flex
+        width: 100%
+        padding: 0 gem(29)
+    .image-wrap
+        margin-right: gem(80)
+        img
+            width: gem(736)
+    .text-wrap
+        max-width: gem(490)
+        margin-top: gem(25)
+        .title
+            margin-top: gem(5)
+        .desc
+            width: 100%
+            max-width: gem(412)
+
+.features-section
+    padding-top: gem(138)
+    padding-bottom: gem(70)
+    .title
+        margin-bottom: gem(30)
+        text-align: center
+    .features-wrap
+        display: grid
+        grid-auto-flow: row dense
+        grid-template-columns: 1fr 1fr 1fr
+        gap: gem(20) gem(20)
+        width: 100%
+
+.faq-section
+    .content
+        display: flex
+        flex-direction: column
+        align-items: center
+        background: #EEF2FA
+        border-bottom-left-radius: gem(20)
+        border-bottom-right-radius: gem(20)
+        margin: 0 gem(39)
+        padding-bottom: gem(70)
+    .title
+        margin-top: gem(9)
+        margin-bottom: gem(27)
+        text-align: center
+        letter-spacing: -1px
+    .faqs
+        width: 100%
+        max-width: gem(610)
+        padding: gem(15)
+
+.pricing-section
+    padding-top: gem(60)
+    .toggle-wrap
+        display: flex
+        align-items: center
+        margin-bottom: gem(49)
+        .toggle-button
+            margin: 0 gem(20)
+        .toggle-label
+            letter-spacing: 0.2em
+            text-transform: uppercase
+            color: #000000
+            font-weight: 600
+    .content
+        display: flex
+        flex-direction: column
+        align-items: center
+        background: #EEF2FA
+        border-top-left-radius: gem(20)
+        border-top-right-radius: gem(20)
+        margin: 0 gem(39)
+        .title
+            margin-top: gem(60)
+            margin-bottom: gem(10)
+        .desc
+            font-weight: 400
+            font-size: gem(15)
+            line-height: gem(28)
+            color: #224281
+            margin-bottom: gem(35)
+            display: flex
+            .red-text
+                color:#FF5454
+                margin-left: gem(4)
+        .cards-wrap
+            display: flex
+            justify-content: space-between
+            margin-bottom: gem(20)
+    .custom-option-wrap
+        display: flex
+        margin-bottom: gem(60)
+        width: 100%
+        border-radius: gem(20)
+        overflow: hidden
+        .title-wrap
+            padding: gem(39) gem(25)
+            display: flex
+            justify-content: space-between
+            align-items: center
+            background-color: #000000
+            .icon
+                margin-left: gem(113)
+                font-size: gem(38)
+        .info-wrap
+            display: flex
+            flex: 1
+            justify-content: space-between
+            background-color: #fff
+            align-items: center
+            padding: 0 gem(46)
+            .info
+                display: flex
+                .icon
+                    margin-right: gem(5)
+
+.get-started-section
+    position: relative
+    margin-bottom: gem(80)
+    padding-top: gem(58)
+    .get-started-bg
+        position: absolute
+        width: 100%
+        z-index: -1
+        img
+            width: 100%
+    .text-wrap
+        display: flex
+        align-items: center
+        flex-direction: column
+        padding-top: gem(40)
+        .title
+            margin-bottom: gem(20)
+        .desc
+            margin-bottom: gem(40)
+            width: 100%
+            max-width: gem(477)
+            text-align: center
+        .btn
+            margin-bottom: gem(60)
+    
+.testimonials-section
+    padding-top: gem(107)
+    position: relative
+    .gradient-1
+        position: absolute
+        right: gem(20)
+        top: gem(20)
+        width: gem(809)
+        height: gem(800)
+        z-index: 0
+        background: radial-gradient(44.63% 43.89% at 54.65% 47.55%, rgba(255, 39, 143, 0.25) 0%, rgba(255, 39, 143, 0) 100%)
+    .gradient-2
+        position: absolute
+        width: gem(395)
+        height: gem(515)
+        top: gem(90)
+        left: gem(0)
+        z-index: 0
+        background: radial-gradient(46.03% 46.03% at 50% 50%, rgba(81, 182, 255, 0.7) 0%, rgba(81, 182, 255, 0) 100%)
+    .gradient-4
+        position: absolute
+        top: gem(120)
+        left: gem(80)
+        width: gem(246)
+        height: gem(321)
+        background: radial-gradient(39.6% 39.6% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%)
+    .gradient-3
+        position: absolute
+        width: gem(576)
+        height: gem(605)
+        top: gem(200)
+        left: gem(-100)
+        z-index: 0
+        background: radial-gradient(50% 50% at 50% 50%, rgba(196, 255, 30, 0.2) 0%, rgba(196, 255, 30, 0) 100%)
+    .text-wrap
+        display: flex
+        flex-direction: column
+        align-items: center
+        .title
+            margin-bottom: gem(20)
+            letter-spacing: -1px
+        .desc
+            max-width: gem(554)
+            width: 100%
+            margin-bottom: gem(36)
+            text-align: center
+            line-height: gem(28)
+        .subtitle
+            margin-bottom: gem(25)
+            font-weight: 700
+            letter-spacing: 0.2em
+            text-transform: uppercase
+    .slider-wrap
+        margin-bottom: gem(80)
+
+@media all and (max-width: 767px)
+    .hero-image-wrap
+        right: gem(-217)
+        top: gem(115)
+        .elipse-lg
+            width: gem(445)
+            height: gem(445)
+            left: gem(564)
+            top: gem(-98)
+        .elipse-md
+            width: gem(332)
+            height: gem(332)
+        .elipse-sm
+            width: gem(258)
+            height: gem(258)
+    .hero-image
+        display: none
+    .hero-section
+        .container
+            padding-top: gem(50)
+        .text-wrap
+            margin-bottom: gem(40)
+        .btn-wrap
+            flex-direction: column
+            align-items: center
+            margin-bottom: gem(98)
+            .btn-contained
+                margin-bottom: gem(20)
+            .btn
+                width: gem(180)
+                height: gem(52)
+    .partners-wrap
+        overflow-x: scroll
+        height: gem(62)
+        padding: 0 gem(10)
+        border-top: 1px solid #E5EDFC
+        border-bottom: 1px solid #E5EDFC
+        border-left: none
+        border-right: none
+        border-radius: 0
+        img
+            margin-right: gem(30)
+            width: gem(90)
+    .steps-section
+        .title-wrap
+            margin-bottom: gem(30)
+    .step-card
+        .step-card-title
+            width: 100%
+            margin-bottom: gem(13)
+        .step-card-wrap
+            display: flex
+            flex-direction: column
+        .step-card-list
+            .step-card-list-item
+                margin-bottom: 0
+        &.step-1
+            margin-bottom: gem(40)
+            .step-card-wrap
+                align-items: center
+            .step-image-wrap
+                position: relative
+                right: initial
+                top: initial
+                width: 100%
+                margin-bottom: gem(12)
+        &.step-2
+            margin-bottom: gem(40)
+            .step-card-wrap
+                margin-right: 0
+            .step-image-wrap
+                position: relative
+                left: initial
+                top: initial
+                width: 100%
+        &.step-3
+            .step-card-wrap
+                margin-right: 0
+            .step-image-wrap
+                position: relative
+                left: initial
+                top: initial
+                width: 100%
+        &.right
+            align-items: flex-start
+    .features-section
+        padding-top: gem(60)
+        padding-bottom: gem(60)
+        .title
+            margin-bottom: gem(20)
+        .features-wrap
+            display: flex
+            flex-direction: column
+    .mobile-product-section
+        padding-top: 0
+        .gradient-2
+            right: gem(-40)
+            top: gem(320)
+        .container
+            padding-bottom: gem(20)
+        .content
+            flex-direction: column
+        .text-wrap
+            margin-right: 0
+            margin-bottom: gem(70)
+        .image-wrap
+            img
+                width: gem(255)
+    .product-section
+        .text-wrap
+            .product-list
+                .list-item
+                    font-size: gem(11)
+                    line-height: gem(21)
+                    margin-bottom: gem(17)
+            .title
+                margin-top: 0
+                max-width: gem(200)
+            .desc
+                line-height: gem(24)
+                margin-bottom: gem(24)
+    .elipse-bg
+        .elipse-lg
+            width: gem(342)
+            height: gem(342)
+        .elipse-sm
+            width: gem(278)
+            height: gem(278)
+    .web-product-section
+        .content
+            flex-direction: column-reverse
+        .image-wrap
+            margin-right: 0
+            img
+                width: gem(320)
+                position: relative
+        .text-wrap
+            max-width: fit-content
+            margin-top: 0
+            padding: 0 gem(16)
+            margin-bottom: gem(70)
+    .testimonials-section
+        .text-wrap
+            .subtitle
+                text-align: center
+    .pricing-section
+        padding-top: 0
+        .content
+            margin: 0
+            .title
+                margin-top: gem(40)
+                margin-bottom: gem(4)
+            .desc
+                margin-bottom: gem(47)
+            .cards-wrap
+                display: block
+                margin-bottom: gem(85)
+                .slick-dots.slick-thumb
+                    display: flex !important
+                .slick-slider
+                    .sub-card
+                        margin: 0 gem(2)
+                        width: auto
+        .custom-option-wrap
+            flex-direction: column
+            border-radius: 10px
+            margin-bottom: gem(40)
+            .title-wrap
+                padding: gem(13) gem(22)
+            .info-wrap
+                flex-direction: column
+                padding: gem(20) gem(45) gem(40)
+                .info
+                    margin-bottom: gem(40)
+                    text-align: center
+                    position: relative
+                    .icon
+                        position: absolute
+                        left: gem(-10)
+    .faq-section
+        .content
+            margin: 0
+            padding-bottom: gem(30)
+            border-bottom-left-radius: 0
+            border-bottom-right-radius: 0
+        .title
+            margin-top: 0
+            width: 100%
+            max-width: gem(290)
+        .faqs
+            width: auto
+        .faq
+            padding: gem(16) gem(20) gem(4)
+    .get-started-section
+        padding-top: gem(40)
+        .text-wrap
+            padding-top: gem(40)
+            .desc
+                margin-bottom: gem(59)
+                max-width: gem(268)

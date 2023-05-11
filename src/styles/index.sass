@@ -1,0 +1,30 @@
+@import './common'
+@import './components'
+@import './pages'
+
+#__next
+    overflow: hidden
+
+body
+    @extend .base-font
+    overflow-x: hidden 
+    touch-action: pan-x pan-y
+    &.overflow-h
+        overflow: hidden
+
+main
+    position: relative
+
+.container
+    position: relative
+    width: var(--container-width)
+    min-width: var(--container-width)
+    margin: 0 auto
+
+@media all and (max-width: 767px)
+    main
+        overflow-x: hidden
+    .container
+        overflow: hidden
+    .sm-hidden
+        display: none

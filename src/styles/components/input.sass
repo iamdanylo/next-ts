@@ -1,0 +1,65 @@
+.input-container
+    display: flex
+    flex-direction: column
+    justify-content: center
+    padding: gem(10) gem(18)
+    border: 1px solid #2C4F96
+    border-radius: gem(90)
+    &.error
+        border-color: #B3040F
+
+.input, .input:focus
+    border: none
+    outline: none
+    color: none
+    background: none
+
+.input-label-error
+    color: #B3040F
+    margin-left: gem(20)
+    margin-top: gem(5)
+    display: block
+    text-transform: lowercase
+    &:first-letter
+        text-transform: uppercase
+
+input[type="date"]::-webkit-calendar-picker-indicator
+    background: transparent
+    bottom: 0
+    color: transparent
+    cursor: pointer
+    height: auto
+    left: 0
+    position: absolute
+    right: 0
+    top: 0
+    width: auto
+
+.input:-internal-autofill-selected
+    background-color: transparent
+
+input::placeholder
+  color: rgba(34, 66, 129, 0.49)
+
+input::-ms-input-placeholder
+  color: rgba(34, 66, 129, 0.49)
+
+.submit-btn
+    position: absolute
+    right: gem(8)
+    width: gem(32)
+    height: gem(32)
+    background-color: #7445FB
+    border-radius: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    border: none
+    outline: none
+    cursor: pointer
+    img
+        position: absolute
+
+@media all and (max-width: 767px)
+    .submit-btn
+        right: gem(28)

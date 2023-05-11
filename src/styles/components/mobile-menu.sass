@@ -1,0 +1,35 @@
+.mobile-menu
+    position: fixed
+    width: 100%
+    height: 100vh
+    background-color: #fff
+    z-index: 5
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    .list
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 100%
+        padding-top: gem(114)
+        .link
+            margin-bottom: gem(30)
+            text-decoration: none
+    .close-wrap
+        position: absolute
+        right: gem(20)
+        top: gem(20)
+    .menu-cta
+        width: gem(200)
+        margin-bottom: gem(150)
+
+@media screen and (max-width: 767px) and (orientation: landscape)
+    .mobile-menu
+        .list
+            padding-top: gem(50)
+            .link
+                margin-bottom: gem(10)
+        .menu-cta
+            display: none

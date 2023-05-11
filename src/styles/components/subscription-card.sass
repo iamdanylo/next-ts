@@ -1,0 +1,80 @@
+.sub-card
+    position: relative
+    background: #FFFFFF
+    border-radius: gem(20)
+    overflow: hidden
+    .card-header
+        padding: gem(20) gem(25)
+        background-color: #2C6AF6
+    .card-body
+        display: flex
+        flex-direction: column
+        align-items: center
+    .card-desc
+        max-width: gem(212)
+        width: 100%
+        text-align: center
+        text-transform: uppercase
+        font-weight: 600
+        line-height: gem(21)
+        color: #000000
+        padding: gem(20) gem(42)
+        border-bottom: 1px solid #E5EDFC
+    .card-price-wrap
+        display: flex
+        align-items: baseline
+        margin-bottom: gem(22)
+        justify-content: center
+        padding-bottom: gem(5)
+        padding-top: gem(6)
+        border-bottom: 1px solid #E5EDFC
+        width: 100%
+        .card-price
+            line-height: initial
+        .card-reccuring
+            font-weight: 600
+            text-transform: uppercase
+            color: #7445FB
+    .custom-placeholder
+        width: 100%
+        margin-bottom: gem(31)
+        border-bottom: 1px solid #E5EDFC
+        display: flex
+        justify-content: center
+        font-family: 'Inter'
+        font-style: italic
+        font-weight: 800
+        font-size: gem(62)
+        line-height: initial
+        text-transform: uppercase
+        letter-spacing: -2px
+        color: #7445FB
+        padding: gem(6) 0
+    .card-list
+        margin-bottom: gem(20)
+        flex-basis: gem(103)
+        .card-list-item
+            display: flex
+            text-transform: uppercase
+        .icon
+            margin-right: gem(10)
+    .btn-purple
+        background: #7445FB
+        box-shadow: 0px 14px 34px rgba(36, 4, 128, 0.4)
+        margin-bottom: gem(60)
+    &.custom-card
+        .card-list
+            margin-left: gem(-59)
+    .price-trial
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        bottom: gem(25)
+        display: flex
+        .red-text
+            color:#FF5454
+            margin-left: gem(4)
+
+@media all and (max-width: 767px)
+    .sub-card
+        width: gem(295)
