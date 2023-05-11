@@ -59,7 +59,7 @@ const Header: React.FC<Props> = ({ className, disabledNav = false }) => {
       <div className="container">
         <div className="nav-wrapper">
           <div className="logo-wrap">
-            <img src="" alt="logo" />
+            <img src="./vercel.svg" alt="logo" />
           </div>
           {!disabledNav && (
             <>
